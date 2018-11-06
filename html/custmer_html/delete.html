@@ -9,6 +9,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
+	
+	<link href="css/style.css" rel="stylesheet">
+	
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -16,9 +19,11 @@
   </head>
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <p class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</p>
+      <p class="navbar-brand">こんにちは、管理太郎さん</p>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">ログアウト</a>
+          <a class="nav-link" href="index.html">ログアウト</a>
         </li>
       </ul>
     </nav>
@@ -29,33 +34,33 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="home.html">
+                <a class="nav-link active" href="#">
                   <span data-feather="home"></span>
                   ホーム <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="entry.html">
+                <a class="nav-link" href="#">
                   <span data-feather="file"></span>
-                  登録
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="select.html">
-                  <span data-feather="file"></span>
-                  更新、削除
+                  顧客一覧
                 </a>
               </li>
             </ul>
 
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>管理者用メニュー</span>
+              <span>管理者メニュー</span>
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
-                  管理画面ログイン
+                  管理者一覧
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  管理者登録
                 </a>
               </li>
             </ul>
