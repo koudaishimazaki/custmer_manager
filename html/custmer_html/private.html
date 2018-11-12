@@ -10,7 +10,7 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 	
-	<link href="css/style.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
 	
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -27,14 +27,13 @@
         </li>
       </ul>
     </nav>
-
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="home.html">
                   <span data-feather="home"></span>
                   ホーム <span class="sr-only">(current)</span>
                 </a>
@@ -46,19 +45,18 @@
                 </a>
               </li>
             </ul>
-
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>管理者メニュー</span>
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-list.html">
                   <span data-feather="file-text"></span>
                   管理者一覧
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-entry.html">
                   <span data-feather="file-text"></span>
                   管理者登録
                 </a>
@@ -66,46 +64,74 @@
             </ul>
           </div>
         </nav>
-
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">詳細</h1>
+           <div class="title-bar">
+            <h3 class="list-title">詳細</h3>
+           </div>
+           <div>
+             <button type="submit" class="btn btn-primary entry-btn"><a class="btn-link" href="update.html">更新</a></button>
+             <button type="submit" class="btn btn-primary button-delete"><a class="btn-link" href="check-dl.html">削除</a></button>
+           </div>
           </div>
           <form>
               <div class="form-row">
-                <div class="form-group col-md-2">
-                  <label class="disabledTextInput" for="disabledTextInput">氏名</label>
-                  <input class="form-control" type="text" placeholder="顧客　太郎" readonly>
+                <div class="form-group ">
+                  <label class="disabledTextInput" for="disabledTextInput">姓(漢字)</label>
+                  <input class="form-origin" type="text" placeholder="顧客" readonly>
+                  <label class="disabledTextInput" for="disabledTextInput">名(漢字)</label>
+                  <input class="form-origin" type="text" placeholder="太郎" readonly>
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-2">
-                  <label for="formGroupExampleInput">電話番号</label>
-                  <input class="form-control" type="text" placeholder="090-1234-5678" readonly>
+                <div class="form-group ">
+                  <label class="disabledTextInput" for="disabledTextInput">姓(かな)</label>
+                  <input class="form-origin" type="text" placeholder="こきゃく" readonly>
+                  <label class="disabledTextInput" for="disabledTextInput">名(かな)</label>
+                  <input class="form-origin" type="text" placeholder="たろう" readonly>
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group ">
                   <label for="inputEmail4">メールアドレス</label>
-                  <input class="form-control" type="text" placeholder="aaaaa@bbb.cc" readonly>
+                  <input class="form-origin" type="text" placeholder="aaaaa@bbb.cc" readonly>
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-2">
-                  <label for="inputState">都道府県</label>
-                  <input class="form-control" type="text" placeholder="東京都" readonly>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputCity">市町村</label>
-                  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputZip">番地</label>
-                  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                <div class="form-group ">
+                  <label for="formGroupExampleInput">電話番号</label>
+                  <input class="form-origin" type="text" placeholder="09012345678" readonly>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary"><a class="btn-link" href="update.html">更新</a></button>
-              <button type="submit" class="btn btn-primary button-delete"><a class="btn-link" href="delete.html">削除</a></button>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="formGroupExampleInput">郵便番号</label>
+                  <input class="form-origin" type="text" placeholder="8910206" readonly>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="inputState">都道府県</label>
+                  <input class="form-origin" type="text" placeholder="東京都" readonly>
+                </div>
+                <div class="form-group ">
+                  <label for="inputCity">市町村</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
+                </div>
+                <div class="form-group ">
+                  <label for="inputZip">番地</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
+                </div>
+                <div class="form-group ">
+                  <label for="inputZip">登録日</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
+                </div>
+                <div class="form-group ">
+                  <label for="inputZip">最終更新日</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
+                </div>
+              </div>
+              
             </form>
         </main>
       </div>

@@ -22,11 +22,10 @@
   </head>
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <p class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</p>
-      <p class="navbar-brand">こんにちは、管理太郎さん</p>
+      <h1 class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</h1>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="index.html">ログアウト</a>
+          <a class="nav-link" href="index.html">管理太郎　ログアウト</a>
         </li>
       </ul>
     </nav>
@@ -60,13 +59,13 @@
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-list.html">
                   <span data-feather="file-text"></span>
                   管理者一覧
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-entry.html">
                   <span data-feather="file-text"></span>
                   管理者登録
                 </a>
@@ -95,10 +94,10 @@
           <div class="form-row">
             <div class="form-group col-md-2">
               <label class="disabledTextInput" for="disabledTextInput">パスワード</label>
-              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="顧客太郎">
+              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="xxxxxxxx">
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">入力内容を確認</button>
+          <button type="submit" class="btn btn-primary"><a class="btn-link" href="check-entry-manager.html">入力内容を確認</a></button>
         </form>
       </main>
     </div>

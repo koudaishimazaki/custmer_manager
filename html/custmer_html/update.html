@@ -35,13 +35,13 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="home.html">
                   <span data-feather="home"></span>
                   ホーム <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="home.html">
                   <span data-feather="file"></span>
                   顧客一覧
                 </a>
@@ -53,13 +53,13 @@
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-list.html">
                   <span data-feather="file-text"></span>
                   管理者一覧
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="manager-entry.html">
                   <span data-feather="file-text"></span>
                   管理者登録
                 </a>
@@ -72,44 +72,55 @@
           <h1 class="h2">更新</h1>
         </div>
         <form>
-          <div class="form-row">
-            <div class="form-group col-md-2">
-              <label class="disabledTextInput" for="disabledTextInput">氏名</label>
-              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="顧客　太郎">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-2">
-              <label for="formGroupExampleInput">電話番号</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="090 1234 6789">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputEmail4">メールアドレス</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-2">
-              <label for="inputState">都道府県</label>
-              <select id="inputState" class="form-control">
-                <option selected>北海道</option>
-                <option>東京</option>
-                <option>福岡</option>
-                <option>鹿児島</option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputCity">市町村</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputZip">番地(アパート、マンションの方は建物名と部屋番号)</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">入力内容を確認</button>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label class="disabledTextInput" for="disabledTextInput">姓(漢字)</label>
+                  <input class="form-origin" type="text" placeholder="顧客" >
+                  <label class="disabledTextInput" for="disabledTextInput">名(漢字)</label>
+                  <input class="form-origin" type="text" placeholder="太郎" >
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label class="disabledTextInput" for="disabledTextInput">姓(かな)</label>
+                  <input class="form-origin" type="text" placeholder="こきゃく" >
+                  <label class="disabledTextInput" for="disabledTextInput">名(かな)</label>
+                  <input class="form-origin" type="text" placeholder="たろう" >
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="inputEmail4">メールアドレス</label>
+                  <input class="form-origin" type="text" placeholder="aaaaa@bbb.cc" >
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="formGroupExampleInput">電話番号</label>
+                  <input class="form-origin" type="text" placeholder="09012345678" >
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="formGroupExampleInput">郵便番号</label>
+                  <input class="form-origin" type="text" placeholder="8910206">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group ">
+                  <label for="inputState">都道府県</label>
+                  <input class="form-origin" type="text" placeholder="東京都">
+                </div>
+                <div class="form-group ">
+                  <label for="inputCity">市町村</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…">
+                </div>
+                <div class="form-group ">
+                  <label for="inputZip">番地</label>
+                  <input class="form-origin" type="text" placeholder="Readonly input here…">
+                </div>
+              </div>
+          <button type="submit" class="btn btn-primary"><a　class="btn-link" href="check-up.html">入力内容を確認</a></button>
         </form>
       </main>
     </div>

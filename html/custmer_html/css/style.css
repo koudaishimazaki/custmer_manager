@@ -16,6 +16,7 @@ form-control {
 /* line 17, ../sass/style.scss */
 .btn-link {
   color: #fff !important;
+  padding: auto 50px;
 }
 
 /* line 21, ../sass/style.scss */
@@ -28,8 +29,18 @@ form-control {
   display: block;
 }
 
-.form-control {
+.form-origin{
 	padding: 0;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .title-bar {
@@ -37,11 +48,27 @@ form-control {
 }
 
 .entry-btn {
-	float: right;
-	margin: 50px auto 10px;
+	float: left;
+	margin: 50px 15px 10px;
+}
+
+.m-entry-btn {
+  float: right;
+  margin: 35px 0 0px;
 }
 
 .list-title {
 	display: inline-block;
 }
 
+h1 {
+  font-size: 1.8em !important;
+}
+
+.check-data {
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+#btn-link {
+  color: #fff !important;
+}
