@@ -76,3 +76,15 @@ h1 {
 #btn-link {
   color: #fff !important;
 }
+
+#search-address {
+  cursor: pointer;
+  color: #fff;
+  background-color: gray;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+  line-height: 1.5;
+  margin-left: 20px;
+  padding: 7px;
+}
