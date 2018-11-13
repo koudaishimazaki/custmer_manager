@@ -43,12 +43,16 @@ form-control {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.system-name {
+  margin-left: 10px;
+}
+
 .title-bar {
 	overflow: hidden;
 }
 
 .entry-btn {
-	float: left;
+	float: right;
 	margin: 50px 15px 10px;
 }
 

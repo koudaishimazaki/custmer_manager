@@ -1,145 +1,158 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>顧客　太郎</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
-	
-	  <link href="css/style.css" rel="stylesheet">
-	
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <p class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</p>
-      <p class="navbar-brand">こんにちは、管理太郎さん</p>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="index.html">ログアウト</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="home.html">
-                  <span data-feather="home"></span>
-                  ホーム <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">
-                  <span data-feather="file"></span>
-                  一覧
-                </a>
-              </li>
-            </ul>
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>管理者メニュー</span>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="manager-list.html">
-                  <span data-feather="file-text"></span>
-                  管理者一覧
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="manager-entry.html">
-                  <span data-feather="file-text"></span>
-                  管理者登録
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-           <div class="title-bar">
-            <h3 class="list-title">詳細</h3>
-           </div>
-           <div>
-             <button type="submit" class="btn btn-primary entry-btn"><a class="btn-link" href="update.html">更新</a></button>
-             <button type="submit" class="btn btn-primary button-delete"><a class="btn-link" href="check-dl.html">削除</a></button>
-           </div>
-          </div>
-          <form>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label class="disabledTextInput" for="disabledTextInput">姓(漢字)</label>
-                  <input class="form-origin" type="text" placeholder="顧客" readonly>
-                  <label class="disabledTextInput" for="disabledTextInput">名(漢字)</label>
-                  <input class="form-origin" type="text" placeholder="太郎" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label class="disabledTextInput" for="disabledTextInput">姓(かな)</label>
-                  <input class="form-origin" type="text" placeholder="こきゃく" readonly>
-                  <label class="disabledTextInput" for="disabledTextInput">名(かな)</label>
-                  <input class="form-origin" type="text" placeholder="たろう" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="inputEmail4">メールアドレス</label>
-                  <input class="form-origin" type="text" placeholder="aaaaa@bbb.cc" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="formGroupExampleInput">電話番号</label>
-                  <input class="form-origin" type="text" placeholder="09012345678" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="formGroupExampleInput">郵便番号</label>
-                  <input class="form-origin" type="text" placeholder="8910206" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="inputState">都道府県</label>
-                  <input class="form-origin" type="text" placeholder="東京都" readonly>
-                </div>
-                <div class="form-group ">
-                  <label for="inputCity">市町村</label>
-                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
-                </div>
-                <div class="form-group ">
-                  <label for="inputZip">番地</label>
-                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
-                </div>
-                <div class="form-group ">
-                  <label for="inputZip">登録日</label>
-                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
-                </div>
-                <div class="form-group ">
-                  <label for="inputZip">最終更新日</label>
-                  <input class="form-origin" type="text" placeholder="Readonly input here…" readonly>
-                </div>
-              </div>
-              
-            </form>
-        </main>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>顧客　太郎</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <h1 class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</h1>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="index.html">管理太郎　ログアウト</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">
+                <span data-feather="home"></span>
+                ホーム <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">
+                <span data-feather="file"></span>
+                顧客一覧
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>管理者メニュー</span>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="manager-list.html">
+                <span data-feather="file-text"></span>
+                管理者一覧
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manager-entry.html">
+                <span data-feather="file-text"></span>
+                管理者登録
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+         <div class="title-bar">
+          <h3 class="list-title">詳細</h3>
+        </div>
       </div>
-    </div>
-     <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
-  </body>
+      <form>
+        <div class="form-row">
+          <div class="form-group ">
+            <label class="disabledTextInput" for="disabledTextInput">姓(漢字)：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" class="disabledTextInput" for="disabledTextInput">顧客</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label class="disabledTextInput" for="disabledTextInput">名(漢字)：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" class="disabledTextInput" for="disabledTextInput">太郎</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label class="disabledTextInput" for="disabledTextInput">姓(かな)：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" class="disabledTextInput" for="disabledTextInput">こきゃく</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label class="disabledTextInput" for="disabledTextInput">名(かな)：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" class="disabledTextInput" for="disabledTextInput">たろう</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="inputEmail4">メールアドレス：</label>
+            <label class="check-data" for="inputEmail4">aaaaa@bbb.cc</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="formGroupExampleInput">電話番号：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" for="formGroupExampleInput">012345678</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="formGroupExampleInput">郵便番号：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" for="formGroupExampleInput">8910206</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="inputState">都道府県：&emsp;&emsp;&emsp;</label>
+            <label class="check-data" for="inputState">東京都</label>
+          </div>
+          <div class="form-group ">
+            <label for="inputCity">市町村：&emsp;&emsp;&emsp;&emsp;</label>
+            <label class="check-data" for="inputCity">港区ｘｘ</label>
+          </div>
+          <div class="form-group ">
+            <label for="inputZip">番地：&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <label class="check-data" for="inputZip">888</label>
+          </div>
+          <div class="form-group ">
+            <label for="inputZip">登録日：&emsp;&emsp;&emsp;&emsp;</label>
+            <label for="inputZip">2018年11月1日10時</label>
+          </div>
+          <div class="form-group ">
+            <label for="inputZip">最終更新日：&emsp;&emsp;</label>
+            <label for="inputZip">2018年11月5日19時</label>
+          </div>
+        </div>
+        <div>
+         <button type="submit" class="btn btn-primary "><a class="btn-link" href="update.html">更新</a></button>
+         <button type="submit" class="btn btn-primary button-delete" onclick="CautionMsg()">削除</button>
+       </div>
+     </form>
+   </main>
+ </div>
+</div>
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+
+  function CautionMsg() {
+    if(confirm("本当に削除しますか？")) {
+      window.location.href = "home.html";
+      alert("削除しました");
+    } else {
+      alert("キャンセルしました");
+    }
+  }
+</script>
+</body>
 </html>

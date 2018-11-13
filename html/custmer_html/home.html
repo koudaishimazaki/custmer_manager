@@ -1,161 +1,150 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>顧客管理システム</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <h1 class="navbar-brand" href="#">顧客管理システム </h1>
-      
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="index.html">管理太郎　ログアウト</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  ホーム <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  顧客一覧
-                </a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>管理者メニュー</span>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="manager-list.html">
-                  <span data-feather="file-text"></span>
-                  管理者一覧
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="manager-entry.html">
-                  <span data-feather="file-text"></span>
-                  管理者登録
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h3>顧客管理システム</h3>
-          </div>
-          <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              詳細検索
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <form class="card card-body">
-    				<div class="form-row">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>顧客管理システム</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <h1 class="navbar-brand system-name" href="#">顧客管理システム </h1> 
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="index.html">管理太郎　ログアウト</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                ホーム <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                顧客一覧
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>管理者メニュー</span>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="manager-list.html">
+                <span data-feather="file-text"></span>
+                管理者一覧
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manager-entry.html">
+                <span data-feather="file-text"></span>
+                管理者登録
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h3>顧客管理システム</h3>
+        </div>
+        <p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            詳細検索
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <form class="card card-body">
+            <div class="form-row">
               <div class="form-group ">
-                <label class="disabledTextInput" for="disabledTextInput">姓(漢字)&emsp;&emsp;&emsp;&nbsp;</label>
+                <label class="disabledTextInput" for="disabledTextInput">姓(漢字)&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
                 <input class="form-origin" type="text" placeholder="顧客" >&emsp;&emsp;&emsp;
                 <label class="disabledTextInput" for="disabledTextInput">名(漢字)&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
                 <input class="form-origin" type="text" placeholder="太郎" >
               </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label class="disabledTextInput" for="disabledTextInput">姓(かな)&emsp;&emsp;&emsp;&nbsp;</label>
-                  <input class="form-origin" type="text" placeholder="こきゃく" >&emsp;&emsp;&emsp;
-                  <label class="disabledTextInput" for="disabledTextInput">名(かな)&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
-                  <input class="form-origin" type="text" placeholder="たろう">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="inputEmail4">メールアドレス</label>
-                  <input class="form-origin" type="text" placeholder="aaaaa@bbb.cc" >&emsp;&emsp;&emsp;
-                  <label for="formGroupExampleInput">電話番号&emsp;&emsp;&emsp;&emsp;</label>
-                  <input class="form-origin" type="text" placeholder="09012345678" >
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group ">
-                  <label for="formGroupExampleInput">郵便番号&emsp;&emsp;&emsp;</label>
-                  <input class="form-origin" type="text" placeholder="8910206">&emsp;&emsp;&emsp;
-              <label for="inputState">都道府県&emsp;&emsp;&emsp;&emsp;</label>
-              <select id="inputState" class="form-origin">
-                <option selected>北海道</option>
-                <option>東京</option>
-                <option>福岡</option>
-                <option>鹿児島</option>
-              </select>
             </div>
-            <div class="form-group">
-              <label for="inputCity">市町村&emsp;&emsp;&emsp;&emsp;</label>
-              <input type="text" class="form-origin" id="inputCity">&emsp;&emsp;&emsp;
-              <label for="inputZip">番地(アパート名)&nbsp;</label>
-              <input type="text" class="form-origin" id="inputZip">
+            <div class="form-row">
+              <div class="form-group ">
+                <label class="disabledTextInput" for="disabledTextInput">姓(かな)&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
+                <input class="form-origin" type="text" placeholder="こきゃく" >&emsp;&emsp;&emsp;
+                <label class="disabledTextInput" for="disabledTextInput">名(かな)&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
+                <input class="form-origin" type="text" placeholder="たろう">
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary search">検索</button>
-         
-              
+            <div class="form-row">
+              <div class="form-group ">
+                <label for="inputEmail4">メールアドレス&emsp;</label>
+                <input class="form-origin" type="text" placeholder="aaaaa@bbb.cc" >&emsp;&emsp;&emsp;
+                <label for="formGroupExampleInput">電話番号<small>＊半角数字</small></label>
+                <input class="form-origin" type="text" placeholder="09012345678" >
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+                <label for="formGroupExampleInput">郵便番号<small>＊半角数字</small></label>
+                <input class="form-origin" type="text" placeholder="8910206">&emsp;&emsp;&emsp;
+                <label for="inputState">都道府県&emsp;&emsp;&emsp;&emsp;</label>
+                <select id="inputState" class="form-origin">
+                  <option selected>北海道</option>
+                  <option>東京</option>
+                  <option>福岡</option>
+                  <option>鹿児島</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputCity">市町村&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="text" class="form-origin" id="inputCity">&emsp;&emsp;&emsp;
+                <label for="inputZip">番地(アパート名)&nbsp;</label>
+                <input type="text" class="form-origin" id="inputZip">
+              </div>
+              <button type="submit" class="btn btn-primary search">検索</button>
             </form>
-           </div>
           </div>
-          <div class="title-bar">
-            <h3 class="list-title">一覧</h3>
-            <button type="submit" class="btn btn-primary m-entry-btn"><a class="btn-link" href="entry.html">新規登録</a></button>
-          </div>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>氏名</th>
-                  <th>電話番号</th>
-                  <th>メールアドレス</th>
-                  <th>住所</th>
-                  <th>登録日</th>
-                  <th>最終更新日</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1001</td>
-                  <td><a href="private.html">顧客　太郎</a></td>
-                  <td>09012345678</td>
-                  <td>aaaaaaaaaaa@bbb.cc</td>
-                  <td>鹿児島県鹿児島市xxxyyyzzz</td>
-                  <td>2018年11月01日10時00分</td>
-                  <td>2018年11月05日19時00分</td>
-                </tr>
-                <tr>
-                  <td>1002</td>
-                  <td><a href="#">山田　花子</td>
+        </div>
+        <div class="title-bar">
+          <h3 class="list-title">一覧</h3>
+          <button type="submit" class="btn btn-primary m-entry-btn"><a class="btn-link" href="entry.html">新規登録</a></button>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>氏名</th>
+                <th>電話番号</th>
+                <th>メールアドレス</th>
+                <th>住所</th>
+                <th>登録日</th>
+                <th>最終更新日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1001</td>
+                <td><a href="private.html">顧客　太郎</a></td>
+                <td>09012345678</td>
+                <td>aaaaaaaaaaa@bbb.cc</td>
+                <td>鹿児島県鹿児島市xxxyyyzzz</td>
+                <td>2018年11月01日10時00分</td>
+                <td>2018年11月05日19時00分</td>
+              </tr>
+              <tr>
+                <td>1002</td>
+                <td><a href="#">山田　花子</td>
                   <td>08055556666</td>
                   <td>dddddddd@www.jp</td>
                   <td>東京都港区www-333</td>
@@ -313,19 +302,18 @@
         </main>
       </div>
     </div>
-
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+      <script src="assets/js/vendor/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
-  </body>
-</html>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
+    </body>
+    </html>
