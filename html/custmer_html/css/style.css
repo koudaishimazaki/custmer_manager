@@ -49,6 +49,11 @@ form-control {
 
 .title-bar {
 	overflow: hidden;
+  margin: 20px 0;
+}
+
+.entry {
+  float: right;
 }
 
 .entry-btn {
