@@ -115,4 +115,10 @@ h1 {
 th {
   padding: 12px auto;
   width: 1em;
+  vertical-align: middle !important;
+}
+
+.caution-msg {
+  color: red;
+  display: none;
 }
