@@ -62,81 +62,67 @@
         </div>
       </nav>
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-         <div class="title-bar">
-          <h3 class="list-title">詳細</h3>
-        </div>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h2>詳細</h2>
       </div>
-      <form>
-        <div class="form-row">
-          <div class="form-group ">
-            <label class="disabledTextInput" for="disabledTextInput">姓(漢字)：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" class="disabledTextInput" for="disabledTextInput">顧客</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label class="disabledTextInput" for="disabledTextInput">名(漢字)：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" class="disabledTextInput" for="disabledTextInput">太郎</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label class="disabledTextInput" for="disabledTextInput">姓(かな)：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" class="disabledTextInput" for="disabledTextInput">こきゃく</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label class="disabledTextInput" for="disabledTextInput">名(かな)：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" class="disabledTextInput" for="disabledTextInput">たろう</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label for="inputEmail4">メールアドレス：</label>
-            <label class="check-data" for="inputEmail4">aaaaa@bbb.cc</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label for="formGroupExampleInput">電話番号：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" for="formGroupExampleInput">012345678</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label for="formGroupExampleInput">郵便番号：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" for="formGroupExampleInput">8910206</label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group ">
-            <label for="inputState">都道府県：&emsp;&emsp;&emsp;</label>
-            <label class="check-data" for="inputState">東京都</label>
-          </div>
-          <div class="form-group ">
-            <label for="inputCity">市町村：&emsp;&emsp;&emsp;&emsp;</label>
-            <label class="check-data" for="inputCity">港区ｘｘ</label>
-          </div>
-          <div class="form-group ">
-            <label for="inputZip">番地：&emsp;&emsp;&emsp;&emsp;&emsp;</label>
-            <label class="check-data" for="inputZip">888</label>
-          </div>
-          <div class="form-group ">
-            <label for="inputZip">登録日：&emsp;&emsp;&emsp;&emsp;</label>
-            <label for="inputZip">2018年11月1日10時</label>
-          </div>
-          <div class="form-group ">
-            <label for="inputZip">最終更新日：&emsp;&emsp;</label>
-            <label for="inputZip">2018年11月5日19時</label>
-          </div>
-        </div>
-        <div>
+      <div>
+        <table class=" table table-bordered table-sm">
+          <tbody>
+            <tr>
+              <th>姓(漢字)</th>
+              <td>顧客</td>
+            </tr>
+            <tr>
+              <th>名(漢字)</th>
+              <td>太郎</td>
+            </tr>
+            <tr>
+              <th>姓(かな)</th>
+              <td>こきゃく</td>
+            </tr>
+            <tr>
+              <th>名(かな)</th>
+              <td>たろう</td>
+            </tr>
+            <tr>
+              <th>メールアドレス</th>
+              <td>aaaaa@bbb.cc</td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td>012345678</td>
+            </tr>
+            <tr>
+              <th>郵便番号</th>
+              <td>8910206</td>
+            </tr>
+            <tr>
+              <th>都道府県</th>
+              <td>東京都</td>
+            </tr>
+            <tr>
+              <th>市町村</th>
+              <td>港区ｘｘ</td>
+            </tr>
+            <tr>
+              <th>番地</th>
+              <td>888</td>
+            </tr>
+            <tr>
+              <th>登録日</th>
+              <td>2018年11月1日10時</td>
+            </tr>
+            <tr>
+              <th>最終更新日</th>
+              <td>2018年11月5日19時</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn-box">
          <button type="submit" class="btn btn-primary "><a class="btn-link" href="update.html">更新</a></button>
          <button type="submit" class="btn btn-primary button-delete" onclick="CautionMsg()">削除</button>
        </div>
-     </form>
+     </div>
    </main>
  </div>
 </div>
@@ -149,8 +135,6 @@
     if(confirm("本当に削除しますか？")) {
       window.location.href = "home.html";
       alert("削除しました");
-    } else {
-      alert("キャンセルしました");
     }
   }
 </script>

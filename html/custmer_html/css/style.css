@@ -107,3 +107,12 @@ h1 {
 .search {
   margin-top: 15px;
 }
+
+.btn-box {
+  margin-top: 20px;
+}
+
+th {
+  padding: 12px auto;
+  width: 1em;
+}
