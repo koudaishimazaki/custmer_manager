@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>顧客　太郎</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <h1 class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">顧客管理システム</h1>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="index.html">管理太郎　ログアウト</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">
+                <span data-feather="home"></span>
+                ホーム <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">
+                <span data-feather="file"></span>
+                顧客一覧
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>管理者メニュー</span>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                管理者一覧
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manager-entry.html">
+                <span data-feather="file-text"></span>
+                管理者登録
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <div class="title-bar">
+            <h3 class="list-title">管理者一覧</h3>
+          </div>
+          <button type="submit" class="btn btn-primary m-entry-btn"><a class="btn-link" href="manager-entry.html">管理者登録</a></button>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>氏名</th>
+                <th>メールアドレス</th>
+                <th>登録日</th>
+                <th>最終更新日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1001</td>
+                <td><a href="m-private.html">管理　太郎</a></td>
+                <td>aaaaa@bbb.cc</td>
+                <td>2018年11月01日9時</td>
+                <td>2018年11月05日18時</td>
+              </tr>
+              <tr>
+                <td>1002</td>
+                <td><a href="#">amet</td>
+                  <td>consectetur</td>
+                  <td>2018年11月01日9時</td>
+                  <td>2018年11月05日18時</td>
+                </tr>
+                <tr>
+                  <td>1003</td>
+                  <td><a href="#">Integer</a></td>
+                  <td>odio</td>
+                  <td>2018年11月01日9時</td>
+                  <td>2018年11月05日18時</td>
+                </tr>
+              </tbody>
+            </table>
+            <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+  </html>
